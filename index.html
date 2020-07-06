@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Purified</title>
+		<link href="app.css" rel="stylesheet" type="text/css">
+		<script src="rotate.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body onload="init()">
+		<header>
+			<h1 class="title"><i class="destiny-key"></i> <a href=".">命运2 自动周报</a> <i class="destiny-key"></i> <span id="week">9999</span>周 <a class="week-add" href="#">下周</a></h1>
+		</header>
+		<main>
+			<div class="items">
+				<div class="item">
+					<div class="item-title">先锋突击任务</div>
+					<div class="mod mod-rotate">
+						<span>焦痕</span>
+						<rotate class="destiny-key" x-rotate=";;"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">锻炉</div>
+					<div class="mod mod-rotate">
+						<span>哥坊诺锻炉</span>
+						<rotate class="destiny-key" x-rotate="星期五、星期二;星期六;星期三、星期日;星期四、星期一"></rotate>
+						<span>弗伦德锻炉</span>
+						<rotate class="destiny-key" x-rotate="星期六;星期三、星期日;星期四、星期一;星期五、星期二"></rotate>
+						<span>伊邪那美锻炉</span>
+						<rotate class="destiny-key" x-rotate="星期三、星期日;星期四、星期一;星期五、星期二;星期六"></rotate>
+						<span>伯尔古西亚锻炉</span>
+						<rotate class="destiny-key" x-rotate="星期四、星期一;星期五、星期二;星期六;星期三、星期日"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">掠夺任务挑战</div>
+					<div class="mod mod-rotate">
+						<span>利维坦</span>
+						<rotate x-rotate="皇家之池;夹击大道;欢愉花园;王座"></rotate>
+						<span>救赎花园</span>
+						<rotate x-rotate="迈向巅峰;零到一百;活下去;串联汇聚"></rotate>
+						<span>过往灾祸</span>
+						<rotate x-rotate="死守战线;万众一心，只为一人;各自为政"></rotate>
+						<span>悲痛之冠</span>
+						<rotate x-rotate="限量祝福;全面胜利;双手万能"></rotate>
+						<span>最后遗愿</span>
+						<rotate x-rotate="禁止进入;记忆能力;召唤仪式;竞技场冠军;永恒之战"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">巅峰利维坦限制</div>
+					<div class="mod">
+						<span>武器限制</span>
+						<rotate class="destiny-key" x-rotate="--;--;--;--;--;--"></rotate>
+						<span>额外修饰</span>
+						<rotate x-rotate="角斗巨兵;棱镜;军火库"></rotate>
+						<span>仅适用于群星之塔和噬界者</span>
+						<span><i class="destiny-key"></i>表示任何武器</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">忧愁圣坛 / 徘徊着的梦魇</div>
+					<div class="mod">
+						<span><i class="destiny-key"></i></span>
+						<rotate x-rotate="星期五、星期一;星期四、星期日;星期三、星期六、星期二"></rotate>
+						<span><i class="destiny-key"></i></span>
+						<rotate x-rotate="星期三、星期六、星期二;星期五、星期一;星期四、星期日"></rotate>
+						<span><i class="destiny-key"></i></span>
+						<rotate x-rotate="星期四、星期日;星期三、星期六、星期二;星期五、星期一"></rotate>
+						<span>徘徊着的梦魇</span>
+						<rotate x-rotate="堕落者议会@弓手射线;『克洛塔之誓』席欧托的梦魇@忧伤港;『米斯拉克之惧』霍尔柯斯的梦魇@光之锚;『希弗·阿瑞斯之爪』贾克斯的梦魇@地狱深渊"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">关于<i class="destiny-key"></i>命运2自动周报</div>
+					<div class="introduce">
+						<div>这个项目由 Taskeren 开发并开源在 GitHub 上。开发这个项目的原因是不想去找周报，而且发现了一些东西的刷新规律，所以就以开发网页的形式制作了自动周报。</div>
+						<div>项目中使用的命运2图标来自于<a href="https://uwu.blue/destiny/">这个地方</a>。</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">英雄万兽园</div>
+					<div class="mod">
+						<span>BOSS</span>
+						<rotate x-rotate="哈沙比寇;阿努那克;帕谷里"></rotate>
+						<span>焦痕</span>
+						<rotate class="destiny-key" x-rotate=";;"></rotate>
+						<span>修饰系统</span>
+						<rotate x-rotate="彻底灭绝<br>一片漆黑<br>坚如钢铁;彻底灭绝<br>榴弹兵<br>弹药慌;彻底灭绝<br>元素配对<br>日陵月替"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">清算之地</div>
+					<div class="mod">
+						<span>BOSS</span>
+						<rotate x-rotate="欧里克斯模拟体;宝剑"></rotate>
+						<span>焦痕</span>
+						<rotate class="destiny-key" x-rotate=";;"></rotate>
+						<span>随机掉落@1阶2阶</span>
+						<rotate x-rotate="节约配给<br>长命百岁<br>特急袋;唯一生还者<br>守夜人<br>孤军<br>不败胜者"></rotate>
+						<span>随机掉落@3阶</span>
+						<rotate x-rotate="磨齿之饥<br>毁灭日;以防万一"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">火星恶化规程</div>
+					<div class="mod">
+						<span>BOSS</span>
+						<rotate x-rotate="『螋尔之吼』凯萨克;『面具』达姆克斯;『荒野之源』纳克斯德;『螋尔之饥辘』巴克里托;『螋尔之冠』努尔阿巴斯"></rotate>
+						<span>随机掉落</span>
+						<rotate class="destiny-key" x-rotate=";;;;"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">利维坦</div>
+					<div class="mod">
+						<span>关卡顺序</span>
+						<rotate x-rotate="皇家之池<br>欢愉花园<br>夹击大道<br>王座;欢愉花园<br>夹击大道<br>皇家之池<br>王座;夹击大道<br>皇家之池<br>欢愉花园<br>王座;欢愉花园<br>皇家之池<br>夹击大道<br>王座;皇家之池<br>夹击大道<br>欢愉花园<br>王座;夹击大道<br>欢愉花园<br>皇家之池<br>王座"></rotate>
+						<span>挑战</span>
+						<rotate x-rotate="皇家之池;夹击大道;欢愉花园;王座"></rotate>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title">千梦之城</div>
+					<div class="mod">
+						<span>高等挑战位置</span>
+						<rotate x-rotate="先驱者隐室;宿愿之岸;星光之室;远日点之眠;艾希拉花园;克雷斯之脊"></rotate>
+						<span>梦城污染程度</span>
+						<rotate x-rotate="最强;最弱;增强"></rotate>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

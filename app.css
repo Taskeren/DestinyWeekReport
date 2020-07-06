@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: "Destiny Keys";
+    src: url("DestinyKeys.eot");
+    src: url("DestinyKeys.woff2") format("woff2"),
+        url("DestinyKeys.woff") format("woff"),
+        url("DestinyKeys.ttf") format("truetype"),
+        url("DestinyKeys.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+.destiny-key {
+    font-family: "Destiny Keys";
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    margin-bottom: 8px;
+    background: #99CCFF;
+    box-shadow: 0 2px 1px rgb(7, 88, 56);
+}
+
+.title {
+    margin: 0;
+    padding: 12px;
+    color: #666699;
+}
+
+.title a {
+    color: #666699;
+    text-decoration: none;
+}
+
+.week-add {
+    width: 42px;
+    height: 42px;
+    padding: 6px;
+    border-radius: 16%;
+    background-color: aqua;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.item {
+    padding: 0;
+    border: 3px solid #66CC99;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #99CCFF;
+    text-align: center;
+}
+
+.item h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.item-title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #66CC99;
+}
+
+main {
+    margin: 8px;
+}
+
+.mod {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mod * {
+    padding: 4px;
+}
+.mod span {
+    color: #FF0033;
+    border-bottom: 1px solid #66CC99;
+}
+.mod rotate {
+    color: #333399;
+    border-left: 2px solid #66CC99;
+    border-bottom: 1px solid #66CC99;
+}
+
+.introduce {
+    padding: 4px;
+}

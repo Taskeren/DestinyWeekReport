@@ -26,4 +26,7 @@ function init() {
     // 更新所有<challenge>元素
     rotate.updateAll();
 
+    // 更新所有<seasonal>元素
+    seasonal.updateAll();
+
 }

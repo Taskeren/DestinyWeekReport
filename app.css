@@ -100,6 +100,16 @@ main {
     border-bottom: 1px solid #66CC99;
 }
 
+.mod seasonal {
+    color: #333399;
+    border-left: 2px solid #66CC99;
+    border-bottom: 1px solid #66CC99;
+}
+
+.mod seasonal::before {
+    content: "*";
+}
+
 .introduce {
     padding: 4px;
 }

@@ -14,7 +14,6 @@ const rotate = {
         let cha = x_rotate.split(";");
 
         let index = app.week % cha.length;
-        console.log("THIS_WEEK_INDEX", index);
 
         el.innerHTML = cha[index];
         return true;
@@ -24,6 +23,7 @@ const rotate = {
      * 更新所有文档内的<rotate>元素
      */
     updateAll: function() {
+        console.log("Update all <rotate>");
         document.querySelectorAll("rotate").forEach(el => rotate.update(el));
     }
 

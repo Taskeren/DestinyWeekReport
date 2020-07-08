@@ -18,11 +18,11 @@ function updateWeekNumber() {
             app.week = week;
         }
         else {
-            app.week = Math.ceil(new Date().getTime() / (7 * 24 * 60 * 60 * 1000));
+            app.week = Math.ceil((new Date().getTime() + (3*24*60*60*1000)) / (7*24*60*60*1000));
         }
     }
     else {
-        app.week = Math.ceil(new Date().getTime() / (7 * 24 * 60 * 60 * 1000));
+        app.week = Math.ceil((new Date().getTime() + (3*24*60*60*1000)) / (7*24*60*60*1000));
     }
 
     console.log("Automatic-Week", app.week);

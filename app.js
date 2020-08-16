@@ -18,11 +18,11 @@ function updateWeekNumber() {
             app.week = week;
         }
         else {
-            app.week = Math.ceil((new Date().getTime() + (3*24*60*60*1000)) / (7*24*60*60*1000));
+            resetWeekNumber();
         }
     }
     else {
-        app.week = Math.ceil((new Date().getTime() + (3*24*60*60*1000)) / (7*24*60*60*1000));
+        resetWeekNumber();
     }
 
     console.log("Automatic-Week", app.week);
@@ -32,7 +32,7 @@ function updateWeekNumber() {
  * 重算周数，用于跳转回本周
  */
 function resetWeekNumber() {
-    return app.week = Math.ceil(new Date().getTime() / (7 * 24 * 60 * 60 * 1000));
+    return app.week = Math.ceil((new Date().getTime() + (2*24*60*60*1000)) / (7 * 24 * 60 * 60 * 1000));
 }
 
 /**
